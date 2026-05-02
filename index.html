@@ -1,294 +1,1034 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Muda Mendunia Indonesia (MMI) - NGO Mewadahi Anak Muda Indonesia dalam Aksi Pendidikan, Ekonomi & Kemanusiaan. Pusat: Kab. Tasikmalaya, cabang di seluruh Indonesia." />
-    <title>Muda Mendunia Indonesia | Pengabdi Muda Untuk Indonesia</title>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Muda Mendunia Indonesia (MMI) - NGO Mewadahi Anak Muda Indonesia dalam Aksi Pendidikan, Ekonomi & Kemanusiaan. Pusat: Kab. Tasikmalaya, cabang di seluruh Indonesia."/>
+  <title>Muda Mendunia Indonesia | Pengabdi Muda Untuk Indonesia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
-    <!-- ========== NAVBAR ========== -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">
-                <img src="Logo.jpeg" alt="MMI Logo" class="logo-img" />
-                <span class="logo-text">Muda Mendunia <span class="logo-accent">Indonesia</span></span>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="Logo.jpeg" alt="MMI Logo" class="logo-img"/>
+        <span class="logo-text">Muda Mendunia <span class="logo-accent">Indonesia</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Beranda</a></li>
+        <li><a href="#tentang" class="nav-link">Tentang</a></li>
+        <li><a href="#program" class="nav-link">Program</a></li>
+        <li><a href="#kegiatan" class="nav-link">Kegiatan</a></li>
+        <li><a href="#cabang" class="nav-link">Cabang</a></li>
+        <li><a href="#kolaborasi" class="nav-link">Kolaborasi</a></li>
+        <li><a href="#artikel" class="nav-link">Artikel</a></li>
+        <li><a href="#kontak" class="nav-link nav-btn">Gabung MMI</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Pusat: Kab. Tasikmalaya · 64 Cabang di Indonesia
+      </div>
+      <h1 class="hero-title">
+        Muda Mendunia<br/>
+        <span class="hero-title-accent">Indonesia</span>
+      </h1>
+      <p class="hero-subtitle">
+        NGO Mewadahi Anak Muda Indonesia dalam Aksi <strong>Pendidikan</strong>, 
+        <strong>Ekonomi Kreatif</strong> & <strong>Kemanusiaan</strong> menuju Indonesia Emas 2045
+      </p>
+      <div class="hero-cta">
+        <a href="#program" class="btn-primary" id="btn-lihat-program">Lihat Program</a>
+        <a href="#kontak" class="btn-outline" id="btn-gabung">Gabung Sekarang</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="64">0</span>
+          <span class="stat-label">Cabang Aktif</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4591">0</span>
+          <span class="stat-label">Pengikut</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="7">0</span>
+          <span class="stat-label">Program Unggulan</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="2023"></span>
+          <span class="stat-label">Tahun Berdiri</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+      <span>Scroll untuk eksplorasi</span>
+    </div>
+  </section>
+
+  <!-- ========== TENTANG SECTION ========== -->
+  <section class="tentang" id="tentang">
+    <div class="container">
+      <div class="tentang-grid">
+        <div class="tentang-visual">
+          <div class="visual-card main-card">
+            <div class="card-icon">🎯</div>
+            <h3>Visi</h3>
+            <p>Terwujud pemuda yang aktif, kreatif dan inovatif dalam menyelesaikan permasalahan yang ada </p>
+          </div>
+          
+          <div class="visual-card accent-card">
+            <div class="card-icon">🚀</div>
+            <h3>Misi</h3>
+            <p>1. Mewadahi dan menjembatani generasi muda Indonesia.
+
+2. Membangun jaringan generasi muda se nasional.
+
+3. Aktif dalam gerakan pengabdian Aksi Pendidikan, Ekonomi kreatif & Kemanusiaan.
+
+4. Menawarkan program yang memiliki daya tarik terhadap generasi muda untuk berpartisipasi aktif.
+
+5. Menciptakan generasi yang unggul adaptif dan kolaboratif.</p>
+          </div>
+          <div class="visual-orb orb-1"></div>
+          <div class="visual-orb orb-2"></div>
+          <p class="hero-slogan">
+  "Bergerak Bersama, Berdampak Nyata untuk Indonesia"
+</p>
+        </div>
+        <div class="tentang-content">
+          <div class="section-tag">Tentang Kami</div>
+          <h2 class="section-title">Profil Muda Mendunia Indonesia</h2>
+          <p class="section-desc">
+           Muda Mendunia Indonesia (MMI) adalah Non Goverment Organization yang mewadahi anak muda seluruh Indonesia untuk aktif kreatif dan inovatif dalam aksi pendidikan ekonomi kreatif dan kemanusiaan dalam mewujudkan Indonesia emas 2045. 
+
+Muda Mendunia Indonesia didirikan pada tanggal 17 Oktober 2023 di Kabupaten Tasikmalaya oleh Dicki Chandra sebagai wadah pengembangan pemuda dalam menyelesaikan permasalahan yang di hadapi terkhusus di Kabupaten Tasikmalaya. Namun seiring berjalanya waktu dengan visi menuju Indonesia emas dirasa tidak cukup hanya 1 kab kota saja yang menjadi prioritas dalam pengembangan dan penyelesaian permasalahan. Maka di tahun 2024 Dicki Chandra sebagai founder resmi mengumumkan MMI sebagai Pusat organisasi dan membuka cabang yang sekarang sudah tersebar di 64 kan kota seluruh Indonesia.
+          </p>
+          <p class="section-desc">
+            Dengan jaringan yang tersebar di <strong>34 provinsi seluruh Indonesia</strong>, 
+            MMI hadir sebagai jembatan antara potensi pemuda dan aksi nyata yang berdampak 
+            menuju <strong>Indonesia Emas 2045</strong>.
+          </p>
+          <div class="tentang-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">📍</span>
+              <div>
+                <strong>Pusat Nasional</strong>
+                <span>Kab. Tasikmalaya, Jawa Barat</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🌐</span>
+              <div>
+                <strong>Jaringan Nasional</strong>
+                <span>34 Cabang di Seluruh Indonesia</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📜</span>
+              <div>
+                <strong>Legal Formal</strong>
+                <span>SK Kepengurusan Nasional</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROGRAM SECTION ========== -->
+  <section class="program" id="program">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Program Unggulan</div>
+        <h2 class="section-title">4 Sektor <span class="text-orange">Utama</span> Kami</h2>
+        <p class="section-subtitle">Program MMI dirancang untuk menyentuh aspek kehidupan pemuda secara menyeluruh</p>
+      </div>
+      <div class="program-grid">
+        <div class="program-card" id="prog-education">
+          <div class="prog-icon-wrap">
+            <span class="prog-icon">📚</span>
+          </div>
+          <div class="prog-badge">Sektor 01</div>
+          <h3>Education & Culture Sector</h3>
+          <p class="prog-subtitle">Bidang Pendidikan</p>
+          <p>Goes To School ( Kegiatan kunjungan kesekolah sekolah)</p>
+          <ul class="prog-list">
+            <li>Zillenial Beraksi 
+(Kegiatan tenaga pendidikan ke sekolah pelosok dengan kurikulum relevansi)</li>
+            <li>Seminar pendidikan 
+(Edukasi betapa pentingnya pendidikan untuk kita dan Indonesia)
+</li>
+            <li>Gerakan Literasi Desa</li>
+            <li>Pelatihan Kepemimpinan Muda</li>
+          </ul>
+          <a href="#kontak" class="prog-link">Ikut Program →</a>
+        </div>
+
+        <div class="program-card featured" id="prog-economy">
+          <div class="prog-icon-wrap">
+            <span class="prog-icon">💡</span>
+          </div>
+          <div class="prog-badge">Sektor 02</div>
+          <h3>Creative Economy Sector</h3>
+          <p class="prog-subtitle">Bidang Ekonomi Kreatif</p>
+          <p>Produk dari pemuda (produk yang dimiliki oleh setiap cabang untuk membantu umkm</p>
+          <ul class="prog-list">
+            <li>2. Riset Industri
+(Kegiatan meriset perusahaan/ UMKM untuk mempelajari permasalah yang di hadapi serta memberikan solusi yang konkret)</li>
+            <li>Seminar Ekonomi kreatif 
+(Edukasi tentang ekonomi)</li>
+            <li>Pasar Kreatif Pemuda</li>
+            <li>Mentoring UMKM Digital</li>
+          </ul>
+          <a href="#kontak" class="prog-link">Ikut Program →</a>
+        </div>
+
+        <div class="program-card" id="prog-humanitarian">
+          <div class="prog-icon-wrap">
+            <span class="prog-icon">❤️</span>
+          </div>
+          <div class="prog-badge">Sektor 03</div>
+          <h3>Humanitarian Sector</h3>
+          <p class="prog-subtitle">Bidang Kemanusiaan</p>
+          <p>Menggerakkan aksi solidaritas pemuda dalam respons bencana, pemberdayaan masyarakat, dan program kesehatan di seluruh penjuru Indonesia.</p>
+          <ul class="prog-list">
+            <li>Pengabdi Muda Nasional
+(Kegiatan pengabdian langsung ke desa pelosok dalam membantu permasalahan yang di hadapi. Kegiatan ini merupakan kegiatan tahunan yang di dorong oleh semua bidang baik pendidikan ekonomi kreatif dan kemanusiaan) </li>
+            <li>Peduli Lindungi (kegiatan peduli panti asuhan, orang jalana, orang terlantar, panti jompo)</li>
+            <li>Zillenial Clean (kegiatan aksi lingkungan)</li>
+            <li>Pelatihan kepemudaan.keorganisasian advokasi dan kebijakan</li>
+          </ul>
+          <a href="#kontak" class="prog-link">Ikut Program →</a>
+        </div>
+
+        <div class="program-card" id="prog-tech">
+          <div class="prog-icon-wrap">
+            <span class="prog-icon">💻</span>
+          </div>
+          <div class="prog-badge">Sektor 04</div>
+          <h3>C & I Technology Sector</h3>
+          <p class="prog-subtitle">Bidang Media & Teknologi </p>
+          <p>Literasi & Keamanan Digital</p>
+          <ul class="prog-list">
+            <li>Kampanye Anti-Hoaks: Edukasi cara verifikasi informasi dan cek fakta.</li>
+            <li>Cyber Security Dasar: Pelatihan perlindungan data pribadi dan privasi digital.</li>
+            <li>Etika Bermedia Sosial: Workshop komunikasi bijak di ruang publik digital.</li>
+            <li>Hackathon Pemuda</li>
+          </ul>
+          <a href="#kontak" class="prog-link">Ikut Program →</a>
+        </div>
+      </div>
+
+      <!-- Additional Programs -->
+      <div class="extra-programs">
+        <div class="section-tag" style="margin-bottom:1.5rem">Program Lainnya</div>
+        <div class="extra-grid">
+          <div class="extra-card">
+            <span>🏕️</span>
+            <div>
+              <h4>Sekolah Alam </h4>
+              <p>sekolah kepemudaan yang dilaksanakan di alam dalam mencetak generasi unggul dan berani bersaing</p>
+            </div>
+          </div>
+          <div class="extra-card">
+            <span>🎓</span>
+            <div>
+              <h4>Sekolah Pelosok</h4>
+              <p>kegiatan tenaga pendidikan ke pelosok pelosok dalam mengajar anak anak yang tidak sekolah.</p>
+            </div>
+          </div>
+          <div class="extra-card">
+            <span>🤝</span>
+            <div>
+              <h4>Open Recruitment</h4>
+              <p>Pembukaan 200 cabang sebelum tahun 2028</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KEGIATAN SECTION ========== -->
+  <section class="kegiatan" id="kegiatan">
+    <div class="container">
+      <div class="section-header light">
+        <div class="section-tag light">Kegiatan Terbaru</div>
+        <h2 class="section-title">Aksi Nyata MMI<br/><span class="text-white">di Seluruh Indonesia</span></h2>
+        <p class="section-subtitle light">Dari Tasikmalaya, kami bergerak untuk seluruh anak bangsa</p>
+      </div>
+      <div class="kegiatan-grid">
+        <div class="kegiatan-card big" id="keg-bpc">
+          <div class="keg-img keg-img-1">
+            <div class="keg-overlay">
+              <span class="keg-badge">BPC MMI 2025</span>
+            </div>
+          </div>
+         
+          </div>
+        </div>
+
+        <div class="kegiatan-card" id="keg-seminar">
+          <div class="keg-img keg-img-2">
+            <div class="keg-overlay">
+              <span class="keg-badge">Seminar</span>
+            </div>
+          </div>
+          <div class="keg-content">
+            <div class="keg-tag">Pendidikan</div>
+            <h3>Seminar "Menuju Desa Maju"</h3>
+            <p>Diskusi transformasi desa berbasis potensi lokal bersama pemangku kepentingan</p>
+            <div class="keg-meta">
+              <span>📍 Nasional</span>
+              <span>📅 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kegiatan-card" id="keg-wisata">
+          <div class="keg-img keg-img-3">
+            <div class="keg-overlay">
+              <span class="keg-badge">Budaya</span>
+            </div>
+          </div>
+          <div class="keg-content">
+            <div class="keg-tag">Budaya & Wisata</div>
+            <h3>Ragam Budaya, Explorasi Wisata</h3>
+            <p>Program eksplorasi kekayaan budaya dan wisata nusantara oleh pemuda MMI</p>
+            <div class="keg-meta">
+              <span>📍 Seluruh Indonesia</span>
+              <span>📅 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kegiatan-card" id="keg-peduli">
+          <div class="keg-img keg-img-4">
+            <div class="keg-overlay">
+              <span class="keg-badge">Kemanusiaan</span>
+            </div>
+          </div>
+          <div class="keg-content">
+            <div class="keg-tag">Kemanusiaan</div>
+            <h3>Peduli Lingkungan Hidup</h3>
+            <p>Aksi nyata menjaga lingkungan melalui program penanaman pohon dan bersih lingkungan massal</p>
+            <div class="keg-meta">
+              <span>📍 Seluruh Indonesia</span>
+              <span>📅 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kegiatan-card" id="keg-raker">
+          <div class="keg-img keg-img-5">
+            <div class="keg-overlay">
+              <span class="keg-badge">Organisasi</span>
+            </div>
+          </div>
+          <div class="keg-content">
+            <div class="keg-tag">Rapat Kerja</div>
+            <h3>RAKER Nasional MMI 2024</h3>
+            <p>Penyusunan program kerja nasional bersama seluruh pengurus cabang dari seluruh Indonesia</p>
+            <div class="keg-meta">
+              <span>📍 Tasikmalaya</span>
+              <span>📅 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CABANG SECTION ========== -->
+  <section class="cabang" id="cabang">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Jaringan Nasional</div>
+        <h2 class="section-title">Cabang MMI di<br/><span class="text-orange">Seluruh Indonesia</span></h2>
+        <p class="section-subtitle">Dari Sabang sampai Merauke, MMI hadir memberdayakan pemuda</p>
+      </div>
+
+      <div class="cabang-pulau-nav">
+        <button class="pulau-btn active" data-pulau="semua" id="btn-semua">Semua</button>
+        <button class="pulau-btn" data-pulau="sumatera" id="btn-sumatera">Sumatera</button>
+        <button class="pulau-btn" data-pulau="jawa" id="btn-jawa">Jawa</button>
+        <button class="pulau-btn" data-pulau="kalimantan" id="btn-kalimantan">Kalimantan</button>
+        <button class="pulau-btn" data-pulau="sulawesi" id="btn-sulawesi">Sulawesi</button>
+        <button class="pulau-btn" data-pulau="timur" id="btn-timur">Indonesia Timur</button>
+      </div>
+
+      <div class="cabang-grid" id="cabangGrid">
+        <!-- Jawa -->
+        <div class="cabang-card" data-pulau="jawa">
+          <div class="cabang-no">BPP</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">🏠</span>
+            <div>
+              <strong>Kab. Tasikmalaya</strong>
+              <span>Jawa Barat · <em>Pusat Nasional</em></span>
+            </div>
+          </div>
+          <span class="cabang-badge pusat">Pusat</span>
+        </div>
+        <div class="cabang-card" data-pulau="jawa">
+          <div class="cabang-no">BPC 02</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Kota Tasikmalaya</strong>
+              <span>Jawa Barat</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="jawa">
+          <div class="cabang-no">BPC 03</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Bandung</strong>
+              <span>Jawa Barat</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="jawa">
+          <div class="cabang-no">BPC 04</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Jakarta</strong>
+              <span>DKI Jakarta</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="jawa">
+          <div class="cabang-no">BPC 05</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Surabaya</strong>
+              <span>Jawa Timur</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="jawa">
+          <div class="cabang-no">BPC 06</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Yogyakarta</strong>
+              <span>DIY Yogyakarta</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="jawa">
+          <div class="cabang-no">BPC 07</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Semarang</strong>
+              <span>Jawa Tengah</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="jawa">
+          <div class="cabang-no">BPC 08</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Serang</strong>
+              <span>Banten</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <!-- Sumatera -->
+        <div class="cabang-card" data-pulau="sumatera">
+          <div class="cabang-no">BPC 09</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Medan</strong>
+              <span>Sumatera Utara</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="sumatera">
+          <div class="cabang-no">BPC 10</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Palembang</strong>
+              <span>Sumatera Selatan</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="sumatera">
+          <div class="cabang-no">BPC 11</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Padang</strong>
+              <span>Sumatera Barat</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="sumatera">
+          <div class="cabang-no">BPC 12</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Pekanbaru</strong>
+              <span>Riau</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="sumatera">
+          <div class="cabang-no">BPC 13</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Banda Aceh</strong>
+              <span>Aceh</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="sumatera">
+          <div class="cabang-no">BPC 14</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Bandar Lampung</strong>
+              <span>Lampung</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="sumatera">
+          <div class="cabang-no">BPC 15</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Jambi</strong>
+              <span>Jambi</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <!-- Kalimantan -->
+        <div class="cabang-card" data-pulau="kalimantan">
+          <div class="cabang-no">BPC 16</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Pontianak</strong>
+              <span>Kalimantan Barat</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="kalimantan">
+          <div class="cabang-no">BPC 17</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Banjarmasin</strong>
+              <span>Kalimantan Selatan</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="kalimantan">
+          <div class="cabang-no">BPC 18</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Samarinda</strong>
+              <span>Kalimantan Timur</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="kalimantan">
+          <div class="cabang-no">BPC 19</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Palangkaraya</strong>
+              <span>Kalimantan Tengah</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <!-- Sulawesi -->
+        <div class="cabang-card" data-pulau="sulawesi">
+          <div class="cabang-no">BPC 20</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Makassar</strong>
+              <span>Sulawesi Selatan</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="sulawesi">
+          <div class="cabang-no">BPC 21</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Manado</strong>
+              <span>Sulawesi Utara</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="sulawesi">
+          <div class="cabang-no">BPC 22</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Palu</strong>
+              <span>Sulawesi Tengah</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="sulawesi">
+          <div class="cabang-no">BPC 23</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Kendari</strong>
+              <span>Sulawesi Tenggara</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <!-- Indonesia Timur -->
+        <div class="cabang-card" data-pulau="timur">
+          <div class="cabang-no">BPC 24</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Denpasar</strong>
+              <span>Bali</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="timur">
+          <div class="cabang-no">BPC 25</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Mataram</strong>
+              <span>NTB</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="timur">
+          <div class="cabang-no">BPC 26</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Kupang</strong>
+              <span>NTT</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="timur">
+          <div class="cabang-no">BPC 27</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Ambon</strong>
+              <span>Maluku</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="timur">
+          <div class="cabang-no">BPC 28</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Jayapura</strong>
+              <span>Papua</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+        <div class="cabang-card" data-pulau="timur">
+          <div class="cabang-no">BPC 29</div>
+          <div class="cabang-info">
+            <span class="cabang-flag">📍</span>
+            <div>
+              <strong>Ternate</strong>
+              <span>Maluku Utara</span>
+            </div>
+          </div>
+          <span class="cabang-badge aktif">Aktif</span>
+        </div>
+      </div>
+
+      <div class="cabang-cta-wrap">
+        <div class="cabang-total-card">
+          <div class="total-number">34+</div>
+          <div class="total-label">Cabang Aktif Seluruh Indonesia</div>
+          <p>Dari Sabang hingga Merauke, MMI terus berkembang memberdayakan pemuda bangsa</p>
+          <a href="#kontak" class="btn-primary" id="btn-daftar-cabang">Daftarkan Cabangmu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KOLABORASI SECTION ========== -->
+  <section class="kolaborasi" id="kolaborasi">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Ekosistem Kolaborasi</div>
+        <h2 class="section-title">Bermitra dengan<br/><span class="text-orange">Stakeholder Terbaik</span></h2>
+        <p class="section-subtitle">MMI membangun sinergi dengan pemerintah, swasta, dan lembaga internasional</p>
+      </div>
+
+      <div class="kolaborasi-types">
+        <div class="kolab-type" id="kolab-pemerintah">
+          <div class="kolab-icon">🏛️</div>
+          <h3>Pemerintah</h3>
+          <div class="kolab-partners">
+            <div class="partner-chip">Kemenpora RI</div>
+            <div class="partner-chip">BNPB</div>
+            <div class="partner-chip">Kemendes PDTT</div>
+            <div class="partner-chip">Pemkab Tasikmalaya</div>
+            <div class="partner-chip">Dinas Pendidikan</div>
+          </div>
+        </div>
+        <div class="kolab-type" id="kolab-ngo">
+          <div class="kolab-icon">🌐</div>
+          <h3>NGO & Komunitas</h3>
+          <div class="kolab-partners">
+            <div class="partner-chip">KNPI</div>
+            <div class="partner-chip">Karang Taruna Nasional</div>
+            <div class="partner-chip">HIPMI</div>
+            <div class="partner-chip">Forum Pemuda Indonesia</div>
+            <div class="partner-chip">BEM Nusantara</div>
+          </div>
+        </div>
+        <div class="kolab-type" id="kolab-pendidikan">
+          <div class="kolab-icon">🎓</div>
+          <h3>Universitas & Lembaga</h3>
+          <div class="kolab-partners">
+            <div class="partner-chip">Universitas Tasikmalaya</div>
+            <div class="partner-chip">UNSIL</div>
+            <div class="partner-chip">UNPAD</div>
+            <div class="partner-chip">ITB</div>
+            <div class="partner-chip">UGM</div>
+          </div>
+        </div>
+        <div class="kolab-type" id="kolab-swasta">
+          <div class="kolab-icon">🏢</div>
+          <h3>Mitra Korporat</h3>
+          <div class="kolab-partners">
+            <div class="partner-chip">CSR Nasional</div>
+            <div class="partner-chip">UMKM Digital</div>
+            <div class="partner-chip">Startup Lokal</div>
+            <div class="partner-chip">Media Partner</div>
+            <div class="partner-chip">Sponsor Kegiatan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kolab-cta">
+        <div class="kolab-cta-content">
+          <h3>Tertarik Berkolaborasi dengan MMI?</h3>
+          <p>Kami terbuka untuk kemitraan strategis dalam bidang pendidikan, ekonomi, kemanusiaan, dan teknologi demi kemajuan pemuda Indonesia</p>
+          <a href="#kontak" class="btn-primary" id="btn-kolaborasi">Ajukan Kerjasama</a>
+        </div>
+        <div class="kolab-cta-visual">
+          <div class="cta-orb"></div>
+          <div class="cta-icon-grid">
+            <span>🤝</span><span>🌏</span><span>💼</span><span>📊</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTIKEL SECTION ========== -->
+  <section class="artikel" id="artikel">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Artikel & Berita</div>
+        <h2 class="section-title">Cerita <span class="text-orange">Dampak Nyata</span><br/>dari MMI</h2>
+        <p class="section-subtitle">Pelajari lebih dalam tentang aksi, program, dan perubahan yang kami ciptakan</p>
+      </div>
+
+      <div class="artikel-featured">
+        <div class="artikel-card featured-article" id="art-1">
+          <div class="artikel-img art-img-1">
+            <div class="artikel-category-badge">Policy</div>
+          </div>
+          <div class="artikel-body">
+            <div class="artikel-meta">
+              <span class="art-category">Organisasi</span>
+              <span class="art-date">15 Maret 2025</span>
+            </div>
+            <h3>BPC MMI Tasikmalaya Buka Rekrutmen Massal: Menuju Indonesia Emas 2045</h3>
+            <p>Badan Pengurus Cabang MMI Tasikmalaya membuka kesempatan emas bagi pemuda daerah untuk bergabung dan berkontribusi dalam gerakan perubahan nasional. Program ini membuka empat sektor utama: Pendidikan, Ekonomi Kreatif, Kemanusiaan, dan Teknologi...</p>
+            <a href="#" class="artikel-link" id="read-art-1">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="artikel-grid">
+        <div class="artikel-card" id="art-2">
+          <div class="artikel-img art-img-2">
+            <div class="artikel-category-badge">Pendidikan</div>
+          </div>
+          <div class="artikel-body">
+            <div class="artikel-meta">
+              <span class="art-category">Pendidikan</span>
+              <span class="art-date">20 Feb 2025</span>
+            </div>
+            <h3>Seminar "Menuju Desa Maju": Sinergi Pemuda dan Pembangunan Desa</h3>
+            <p>MMI menginisiasi seminar nasional yang mempertemukan pemuda desa dengan pemangku kepentingan untuk merancang strategi pembangunan desa berbasis potensi lokal...</p>
+            <a href="#" class="artikel-link" id="read-art-2">Baca Selengkapnya →</a>
+          </div>
+        </div>
+
+        <div class="artikel-card" id="art-3">
+          <div class="artikel-img art-img-3">
+            <div class="artikel-category-badge">Kemanusiaan</div>
+          </div>
+          <div class="artikel-body">
+            <div class="artikel-meta">
+              <span class="art-category">Kemanusiaan</span>
+              <span class="art-date">10 Jan 2025</span>
+            </div>
+            <h3>Gerakan Peduli Lingkungan: Ribuan Pohon Ditanam Oleh Pemuda MMI</h3>
+            <p>Dalam aksi kemanusiaan terbesar sepanjang sejarah MMI, ribuan pemuda dari 34 cabang serentak melakukan penanaman pohon dan pembersihan lingkungan secara massal...</p>
+            <a href="#" class="artikel-link" id="read-art-3">Baca Selengkapnya →</a>
+          </div>
+        </div>
+
+        <div class="artikel-card" id="art-4">
+          <div class="artikel-img art-img-4">
+            <div class="artikel-category-badge">Ekonomi</div>
+          </div>
+          <div class="artikel-body">
+            <div class="artikel-meta">
+              <span class="art-category">Ekonomi Kreatif</span>
+              <span class="art-date">5 Des 2024</span>
+            </div>
+            <h3>Workshop Ekonomi Kreatif MMI: Lahirkan UMKM Digital dari Daerah</h3>
+            <p>Program inkubasi ekonomi kreatif MMI berhasil melahirkan puluhan UMKM digital dari berbagai daerah yang kini telah berhasil menembus pasar nasional...</p>
+            <a href="#" class="artikel-link" id="read-art-4">Baca Selengkapnya →</a>
+          </div>
+        </div>
+
+        <div class="artikel-card" id="art-5">
+          <div class="artikel-img art-img-5">
+            <div class="artikel-category-badge">Budaya</div>
+          </div>
+          <div class="artikel-body">
+            <div class="artikel-meta">
+              <span class="art-category">Budaya & Wisata</span>
+              <span class="art-date">20 Nov 2024</span>
+            </div>
+            <h3>Ragam Budaya, Eksplorasi Wisata: Pemuda MMI Jelajahi Nusantara</h3>
+            <p>Melalui program eksplorasi budaya, anggota MMI dari berbagai daerah saling bertukar pengalaman tentang kekayaan lokal dan mengembangkan pariwisata berbasis komunitas...</p>
+            <a href="#" class="artikel-link" id="read-art-5">Baca Selengkapnya →</a>
+          </div>
+        </div>
+
+        <div class="artikel-card" id="art-6">
+          <div class="artikel-img art-img-6">
+            <div class="artikel-category-badge">Teknologi</div>
+          </div>
+          <div class="artikel-body">
+            <div class="artikel-meta">
+              <span class="art-category">Teknologi</span>
+              <span class="art-date">15 Okt 2024</span>
+            </div>
+            <h3>Hackathon Pemuda MMI: Inovasi Teknologi untuk Solusi Lokal</h3>
+            <p>MMI menggelar hackathon nasional yang mengundang pemuda berbakat dari seluruh Indonesia untuk bersaing menciptakan solusi teknologi bagi permasalahan masyarakat...</p>
+            <a href="#" class="artikel-link" id="read-art-6">Baca Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="artikel-cta">
+        <a href="#" class="btn-outline" id="btn-semua-artikel">Lihat Semua Artikel →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== JOIN / KONTAK SECTION ========== -->
+  <section class="kontak" id="kontak">
+    <div class="container">
+      <div class="kontak-grid">
+        <div class="kontak-content">
+          <div class="section-tag light">Bergabung dengan MMI</div>
+          <h2 class="section-title white">Jadilah Bagian dari<br/>Perubahan Indonesia</h2>
+          <p class="kontak-desc">
+            Bergabunglah dengan ribuan pemuda Indonesia yang telah membuktikan bahwa aksi nyata 
+            dapat mengubah bangsa. Daftarkan dirimu sekarang dan dapatkan manfaat luar biasa!
+          </p>
+          <div class="kontak-benefits">
+            <div class="benefit-item">✅ SK Kepengurusan Resmi</div>
+            <div class="benefit-item">✅ Jaringan Pemuda Seluruh Indonesia</div>
+            <div class="benefit-item">✅ Pengalaman Kerja Tim Profesional</div>
+            <div class="benefit-item">✅ Sertifikat Nasional + Rekomendasi</div>
+            <div class="benefit-item">✅ Potensi Jadi BPW & BPP</div>
+            <div class="benefit-item">✅ Berkontribusi untuk Indonesia Emas</div>
+          </div>
+          <div class="kontak-social">
+            <a href="https://www.instagram.com/mudamendunia.idn" target="_blank" class="social-btn" id="social-ig">
+              <span>📸</span> Instagram
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link active">Beranda</a></li>
-                <li><a href="#tentang" class="nav-link">Tentang</a></li>
-                <li><a href="#program" class="nav-link">Program</a></li>
-                <li><a href="#kegiatan" class="nav-link">Kegiatan</a></li>
-                <li><a href="#cabang" class="nav-link">Cabang</a></li>
-                <li><a href="#kolaborasi" class="nav-link">Kolaborasi</a></li>
-                <li><a href="#artikel" class="nav-link">Artikel</a></li>
-                <li><a href="#kontak" class="nav-link nav-btn">Gabung MMI</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
+            <a href="https://bit.ly/MarchMMI2025" target="_blank" class="social-btn" id="social-daftar">
+              <span>📋</span> Daftar Sekarang
+            </a>
+          </div>
         </div>
-    </nav>
+        <div class="kontak-form-wrap">
+          <div class="kontak-form-card">
+            <h3>Hubungi Kami</h3>
+            <form class="kontak-form" id="kontakForm">
+              <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required/>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@contoh.com" required/>
+              </div>
+              <div class="form-group">
+                <label for="kota">Kota / Kabupaten</label>
+                <input type="text" id="kota" name="kota" placeholder="Asal kota kamu" required/>
+              </div>
+              <div class="form-group">
+                <label for="minat">Sektor Minat</label>
+                <select id="minat" name="minat">
+                  <option value="">Pilih sektor...</option>
+                  <option value="pendidikan">Education & Culture</option>
+                  <option value="ekonomi">Creative Economy</option>
+                  <option value="kemanusiaan">Humanitarian</option>
+                  <option value="teknologi">C & I Technology</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="3" placeholder="Ceritakan motivasimu bergabung..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary full" id="btn-submit-form">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- ========== HERO SECTION ========== -->
-    <section class="hero" id="home">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <img src="Logo.png" alt="MMI Logo" class="logo-img"/>
+            <span class="logo-text">Muda Mendunia<br/><span class="logo-accent">Indonesia</span></span>
+          </a>
+          <p>NGO Mewadahi Anak Muda Indonesia dalam Aksi Pendidikan, Ekonomi & Kemanusiaan menuju Indonesia Emas 2045.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/mudamendunia.idn" target="_blank" class="footer-social-link" id="footer-ig" aria-label="Instagram MMI">📸</a>
+            <a href="https://bit.ly/MarchMMI2025" target="_blank" class="footer-social-link" id="footer-wa" aria-label="WhatsApp MMI">💬</a>
+            <a href="#" class="footer-social-link" id="footer-yt" aria-label="YouTube MMI">▶️</a>
+          </div>
         </div>
-        <div class="hero-container">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Pusat: Kab. Tasikmalaya · 64 Cabang di Indonesia
-            </div>
-            <h1 class="hero-title">
-                Muda Mendunia<br />
-                <span class="hero-title-accent">Indonesia</span>
-            </h1>
-            <p class="hero-subtitle">
-                NGO Mewadahi Anak Muda Indonesia dalam Aksi <strong>Pendidikan</strong>, 
-                <strong>Ekonomi Kreatif</strong> & <strong>Kemanusiaan</strong> menuju Indonesia Emas 2045
-            </p>
-            <div class="hero-cta">
-                <a href="#program" class="btn-primary" id="btn-lihat-program">Lihat Program</a>
-                <a href="#kontak" class="btn-outline" id="btn-gabung">Gabung Sekarang</a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="64">0</span>
-                    <span class="stat-label">Cabang Aktif</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="4591">0</span>
-                    <span class="stat-label">Pengikut</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="7">0</span>
-                    <span class="stat-label">Program Unggulan</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="2023">2023</span>
-                    <span class="stat-label">Tahun Berdiri</span>
-                </div>
-            </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#tentang">Tentang MMI</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#cabang">Cabang</a></li>
+            <li><a href="#kolaborasi">Kolaborasi</a></li>
+            <li><a href="#artikel">Artikel</a></li>
+          </ul>
         </div>
-        <div class="hero-scroll-indicator">
-            <div class="scroll-mouse"><div class="scroll-dot"></div></div>
-            <span>Scroll untuk eksplorasi</span>
+        <div class="footer-links">
+          <h4>Program</h4>
+          <ul>
+            <li><a href="#program">Education & Culture</a></li>
+            <li><a href="#program">Creative Economy</a></li>
+            <li><a href="#program">Humanitarian</a></li>
+            <li><a href="#program">C & I Technology</a></li>
+            <li><a href="#program">Perkemahan Nasional</a></li>
+          </ul>
         </div>
-    </section>
+        <div class="footer-contact">
+          <h4>Pusat Nasional</h4>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <p>Kabupaten Tasikmalaya, Jawa Barat, Indonesia</p>
+          </div>
+          <div class="footer-contact-item">
+            <span>📸</span>
+            <p>@mudamendunia.idn</p>
+          </div>
+          <div class="footer-contact-item">
+            <span>🌐</span>
+            <p>mudamendunia.idn</p>
+          </div>
+          <div class="footer-contact-item">
+            <span>📋</span>
+            <p>bit.ly/MarchMMI2025</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Muda Mendunia Indonesia. All rights reserved. | Pengabdi Muda Untuk Indonesia 🇮🇩</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- ========== TENTANG SECTION ========== -->
-    <section class="tentang" id="tentang">
-        <div class="container">
-            <div class="tentang-grid">
-                <div class="tentang-visual">
-                    <div class="visual-card main-card">
-                        <div class="card-icon">🎯</div>
-                        <h3>Visi</h3>
-                        <p>Terwujud pemuda yang aktif, kreatif dan inovatif dalam menyelesaikan permasalahan yang ada</p>
-                    </div>
-                    <div class="visual-card accent-card">
-                        <div class="card-icon">🚀</div>
-                        <h3>Misi</h3>
-                        <p>
-                            1. Mewadahi dan menjembatani generasi muda Indonesia.<br>
-                            2. Membangun jaringan generasi muda nasional.<br>
-                            3. Aktif dalam gerakan pengabdian Pendidikan, Ekonomi & Kemanusiaan.<br>
-                            4. Menawarkan program atraktif bagi generasi muda.<br>
-                            5. Menciptakan generasi unggul, adaptif, dan kolaboratif.
-                        </p>
-                    </div>
-                    <div class="visual-orb orb-1"></div>
-                    <div class="visual-orb orb-2"></div>
-                    <p class="hero-slogan">"Bergerak Bersama, Berdampak Nyata untuk Indonesia"</p>
-                </div>
-                <div class="tentang-content">
-                    <div class="section-tag">Tentang Kami</div>
-                    <h2 class="section-title">Profil Muda Mendunia Indonesia</h2>
-                    <p class="section-desc">
-                        Muda Mendunia Indonesia (MMI) adalah Non-Government Organization yang mewadahi anak muda seluruh Indonesia untuk aktif, kreatif, dan inovatif dalam aksi pendidikan, ekonomi kreatif, dan kemanusiaan dalam mewujudkan Indonesia Emas 2045.
-                    </p>
-                    <p class="section-desc">
-                        Didirikan pada 17 Oktober 2023 di Kabupaten Tasikmalaya oleh Dicki Chandra. Sejak 2024, MMI resmi menjadi organisasi nasional dengan jangkauan lebih dari 64 kota/kabupaten di Indonesia.
-                    </p>
-                    <div class="tentang-highlights">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">📍</span>
-                            <div>
-                                <strong>Pusat Nasional</strong>
-                                <span>Kab. Tasikmalaya, Jawa Barat</span>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🌐</span>
-                            <div>
-                                <strong>Jaringan Nasional</strong>
-                                <span>64 Cabang di Seluruh Indonesia</span>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">📜</span>
-                            <div>
-                                <strong>Legal Formal</strong>
-                                <span>SK Kepengurusan Nasional</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== PROGRAM SECTION ========== -->
-    <section class="program" id="program">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-tag">Program Unggulan</div>
-                <h2 class="section-title">4 Sektor <span class="text-orange">Utama</span> Kami</h2>
-            </div>
-            <div class="program-grid">
-                <!-- Sektor Pendidikan -->
-                <div class="program-card">
-                    <div class="prog-icon-wrap"><span class="prog-icon">📚</span></div>
-                    <h3>Education & Culture</h3>
-                    <ul class="prog-list">
-                        <li><strong>Goes To School</strong> – Kunjungan sekolah.</li>
-                        <li><strong>Zillenial Beraksi</strong> – Pendidikan pelosok.</li>
-                        <li><strong>Seminar Pendidikan</strong> – Edukasi pentingnya ilmu.</li>
-                    </ul>
-                    <a href="#kontak" class="prog-link">Ikut Program →</a>
-                </div>
-                <!-- Sektor Ekonomi -->
-                <div class="program-card featured">
-                    <div class="prog-icon-wrap"><span class="prog-icon">💡</span></div>
-                    <h3>Creative Economy</h3>
-                    <ul class="prog-list">
-                        <li><strong>Produk Pemuda</strong> – Support UMKM Lokal.</li>
-                        <li><strong>Riset Industri</strong> – Solusi konkret bisnis.</li>
-                        <li><strong>Seminar Ekonomi</strong> – Edukasi pasar modern.</li>
-                    </ul>
-                    <a href="#kontak" class="prog-link">Ikut Program →</a>
-                </div>
-                <!-- Sektor Kemanusiaan -->
-                <div class="program-card">
-                    <div class="prog-icon-wrap"><span class="prog-icon">❤️</span></div>
-                    <h3>Humanitarian</h3>
-                    <ul class="prog-list">
-                        <li><strong>Pengabdi Muda</strong> – Aksi pelosok nasional.</li>
-                        <li><strong>Peduli Lindungi</strong> – Sosial & Panti.</li>
-                        <li><strong>Zillenial Clean</strong> – Aksi lingkungan.</li>
-                    </ul>
-                    <a href="#kontak" class="prog-link">Ikut Program →</a>
-                </div>
-                <!-- Sektor Teknologi -->
-                <div class="program-card">
-                    <div class="prog-icon-wrap"><span class="prog-icon">💻</span></div>
-                    <h3>C & I Technology</h3>
-                    <ul class="prog-list">
-                        <li><strong>Literasi Digital</strong> – Anti-hoaks & Security.</li>
-                        <li><strong>Konten Kreatif</strong> – Workshop & Podcast.</li>
-                        <li><strong>Digitalisasi Internal</strong> – System & Dashboard.</li>
-                    </ul>
-                    <a href="#kontak" class="prog-link">Ikut Program →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== CABANG SECTION ========== -->
-    <section class="cabang" id="cabang">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-tag">Jaringan Nasional</div>
-                <h2 class="section-title">Cabang MMI di Indonesia</h2>
-            </div>
-            <div class="cabang-grid" id="cabangGrid">
-                <div class="cabang-card">
-                    <div class="cabang-no">BPP</div>
-                    <div class="cabang-info">
-                        <strong>Kab. Tasikmalaya</strong>
-                        <span>Pusat Nasional</span>
-                    </div>
-                    <span class="cabang-badge pusat">Pusat</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== JOIN SECTION ========== -->
-    <section class="kontak" id="kontak">
-        <div class="container">
-            <div class="kontak-grid">
-                <div class="kontak-content">
-                    <h2 class="section-title white">Jadilah Bagian dari Perubahan</h2>
-                    <div class="kontak-benefits">
-                        <div class="benefit-item">✅ SK Kepengurusan Resmi</div>
-                        <div class="benefit-item">✅ Jaringan Nasional</div>
-                        <div class="benefit-item">✅ Sertifikat & Rekomendasi</div>
-                    </div>
-                    <div class="kontak-social">
-                        <a href="https://www.instagram.com/mudamendunia.idn" target="_blank" class="social-btn">Instagram</a>
-                        <a href="https://bit.ly/MarchMMI2025" target="_blank" class="social-btn">Daftar Sekarang</a>
-                    </div>
-                </div>
-                <div class="kontak-form-wrap">
-                    <div class="kontak-form-card">
-                        <form class="kontak-form">
-                            <input type="text" placeholder="Nama Lengkap" required />
-                            <input type="email" placeholder="Email" required />
-                            <select required>
-                                <option value="">Pilih Sektor...</option>
-                                <option value="pendidikan">Pendidikan</option>
-                                <option value="ekonomi">Ekonomi</option>
-                                <option value="kemanusiaan">Kemanusiaan</option>
-                            </select>
-                            <textarea placeholder="Motivasi bergabung..."></textarea>
-                            <button type="submit" class="btn-primary full">Kirim Pesan</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo-text">Muda Mendunia Indonesia</span>
-                    <p>NGO Mewadahi Anak Muda Indonesia menuju Indonesia Emas 2045.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Navigasi</h4>
-                    <ul>
-                        <li><a href="#tentang">Tentang</a></li>
-                        <li><a href="#program">Program</a></li>
-                        <li><a href="#kontak">Gabung</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Muda Mendunia Indonesia. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
